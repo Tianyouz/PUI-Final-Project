@@ -1,5 +1,5 @@
 	
-	if (localStorage.getItem("storedIdx") === null || localStorage.getItem("storedList") === null || localStorage.getItem("totalLen") === null){
+	if (localStorage.getItem("storedIdx") == null || localStorage.getItem("storedList") == null || localStorage.getItem("totalLen") == null){
 		localStorage.setItem("storedIdx", "0");
 		localStorage.setItem("storedList", JSON.stringify([{"title": "Cover", "contents": "Cover Page"}]));
 		localStorage.setItem("totalLen", "1");
