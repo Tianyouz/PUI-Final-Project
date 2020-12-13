@@ -79,11 +79,11 @@ function myMove() {
       		i++; 
       		elem.style.top = i + 'px'; 
         }
-        else if (i == 76 && j < 1495){
+        else if (i == 76 && j < (document.documentElement.clientWidth - 20)){
       		j++; 
       		elem.style.left = j + 'px'; 
         }
-        else if (j == 1495 && i > 0){
+        else if (j == (document.documentElement.clientWidth - 20) && i > 0){
       		i--; 
       		elem.style.top = i + 'px'; 
         }
