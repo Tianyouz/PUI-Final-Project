@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="homestyle.css">
+<style>* { padding: 0; margin: 0; }</style>
+</head>
+<body>
+
+<h1 style="background-color:#B69975;color:black;padding:30px;font-family:'Courier New">Dear Diary</h1>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="newEntryPage.html" class="active">New</a>
+  <a href="directory.html">Directory</a>
+  <a style="float:right" href="#">Log In</a>
+  <a style="float:right" href="#">  <form><input type="text" id="search" name="search" style="height:14px; width:80px">     Search</form> </a>
+</div>
+
+<br><br><br>
+
+   <form action="index.html">
+		<textarea id="newEntryTitle" name="newEntryTitleName" style="height:50px; width:700px; background-color: rgb(243, 232, 218); font-family:'Courier New'; font-size:18px"></textarea><br>
+  		<textarea id="newEntry" name="newEntryName" style="height:350px; width:700px; background-color: rgb(243, 232, 218); font-family:'Courier New'; font-size:18px"></textarea><br>
+ 		<input type="submit" onclick="return newEntryFun();" value="Add" style="background-color: #633700; color: white; padding: 14px 16px; font-size: 17px">
+   </form> 
+   <script src="mainJS.js">  
+   </script>
+
+
+
+</body>
+</html>
