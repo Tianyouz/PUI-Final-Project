@@ -67,14 +67,11 @@ function myMove() {
   var elem = document.getElementById("myAnimation");
   elem.style.top = "0px";
   elem.style.left = "0px";   
-  var pos = 0;
   var i = 0;
   var j = 0;
   var id = setInterval(frame, 5);
   function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
+    
     	if (j == 0 && i < 76){
       		i++; 
       		elem.style.top = i + 'px'; 
@@ -92,7 +89,7 @@ function myMove() {
       		elem.style.left = j + 'px'; 
         }
       
-    }
+    
   }
 }
 </script>
