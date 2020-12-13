@@ -47,12 +47,11 @@
 			dir.style.color = "white";
 			
 			dir.href = "index.html";
-			var tempVar = "javascript: trial(" + i + ");";
+			var tempVar = "javascript: llist(" + i + ");";
 			dir.setAttribute( "onClick", tempVar );
 			
-	function trial(i){
+	function llist(i){
 		localStorage.setItem("storedIdx", i);
-		document.write("JFDIFJ");
 		if (localStorage.getItem("storedIdx") === "0") {document.getElementById("Promptt").innerHTML = "Showing the cover page!";}
 		else {document.getElementById("Promptt").innerHTML = "Showing Entry No. " + localStorage.getItem("storedIdx");}   
 		document.getElementById("fTitle").value =  (JSON.parse(localStorage.getItem("storedList")))[parseInt(localStorage.getItem("storedIdx"))].title;
