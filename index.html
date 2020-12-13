@@ -7,8 +7,10 @@
 </head>
 <body>
 
-<h1 style="background-color:#B69975;color:black;padding:30px;font-family:'Courier New">Dear Diary</h1>
-
+<div id ="myContainer">
+<h1 style="background-color:#B69975;color:black;padding:30px;font-family:'Courier New'; text-align: center">Dear Diary</h1>
+<div id ="myAnimation"></div>
+</div>
 <div class="navbar">
   <a href="index.html" class="active">Home</a>
   <a href="newEntryPage.html">New</a>
@@ -50,6 +52,50 @@
 
    <script src="mainJS.js">
    </script>
+
+
+
+<p>
+<button onclick="myMove()">Click Me</button> 
+</p>
+
+
+
+<script>
+document.ready(myMove());
+function myMove() {
+  var elem = document.getElementById("myAnimation");
+  elem.style.top = "0px";
+  elem.style.left = "0px";   
+  var pos = 0;
+  var i = 0;
+  var j = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+    	if (j == 0 && i < 76){
+      		i++; 
+      		elem.style.top = i + 'px'; 
+        }
+        else if (i == 76 && j < 1495){
+      		j++; 
+      		elem.style.left = j + 'px'; 
+        }
+        else if (j == 1495 && i > 0){
+      		i--; 
+      		elem.style.top = i + 'px'; 
+        }
+        else if (i == 0 && j > 0){
+      		j--; 
+      		elem.style.left = j + 'px'; 
+        }
+      
+    }
+  }
+}
+</script>
 
 
 
